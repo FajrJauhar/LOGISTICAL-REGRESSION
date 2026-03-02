@@ -1,3 +1,4 @@
+#LIBRARIES
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
@@ -32,3 +33,4 @@ model.fit(X_train_scaled,y_train)
 y_predict = model.predict(X_test_scaled)
 print(accuracy_score(y_test,y_predict))
 print(classification_report(y_test,y_predict))
+
